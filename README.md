@@ -37,5 +37,5 @@ z_PREROUTNG
 this is done so that no duplicate rules occur, and so that when you clear the old rules, the docker rules are not deleted.
 Be sure to use alias.
 
-Это для всех devops в чатах telegram у котрых я спрашивал как мне решить эту проблему? мне сказали нет решений или они все костыльные и не рабочие. Получайте рабочее решение! \
+Это для всех devops в чатах telegram у котрых я спрашивал как мне решить эту проблему? мне сказали нет решений или они все костыльные и не рабочие. Получайте мое рабочее решение! \
 Надеюсь это комуто поможет. Удачи.
