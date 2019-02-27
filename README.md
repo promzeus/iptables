@@ -1,7 +1,7 @@
 ### IPTABLES
 `/etc/iptables.sh` \
 Automatic iptables for docker swarm with blocking the unauthorized opening of ports to the world. \
-When adding a new service to Docker Swarm, for example, 0.0.0.0.5000 or restarting dockerd, swarm bypasses the -I FORWARD 1 ..... lock and opens the ports above the blocking rule.\
+When adding a new service to Docker Swarm, for example, 0.0.0.0:5000 or restarting dockerd, swarm bypasses the -I FORWARD 1 ..... lock and opens the ports above the blocking rule.\
 Therefore, my script needs to be run every 5 minutes for example.
 ```
 */5 * * * * /bin/bash /etc/iptables.sh > /dev/null 2>&1
@@ -36,3 +36,6 @@ z_PREROUTNG
 ```
 this is done so that no duplicate rules occur, and so that when you clear the old rules, the docker rules are not deleted.
 Be sure to use alias.
+
+Это для всех devops в чатах telegram у котрых я спрашивал как мне решить эту проблему? мне сказали нет решений или они все костыльные и не рабочие. Получайте рабочее решение! 
+Надеюсь это комуто поможет. Удачи.
