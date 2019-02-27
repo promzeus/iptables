@@ -26,4 +26,13 @@ if [ -f "/etc/ipt_docker_rules.old" ]; then
 fi
 /bin/cp /etc/ipt_docker_rules /etc/ipt_docker_rules.old
 ```
-To run the script manually, use the `-f` option.
+To run the script manually, use the `-f` option. \
+All chains have their alias:
+```
+z_INPUT
+z_FORWARD
+z_POSTROUTING
+z_PREROUTNG
+```
+this is done so that no duplicate rules occur, and so that when you clear the old rules, the docker rules are not deleted.
+Be sure to use alias.
